@@ -1,7 +1,5 @@
 $(document).ready(function() { 
-	
-	$("#quoteButton").on("click", function(){
-		var quotes = ["May God have mercy upon my enemies, because I won’t.", 
+	var quotes = ["May God have mercy upon my enemies, because I won’t.", 
 					"If everyone is thinking alike, then somebody isn't thinking.", 
 					"A good plan violently executed right now is far better than a perfect plan executed next week.",
 					"Accept the challenges, so that you may feel the exhilaration of victory.",
@@ -11,6 +9,9 @@ $(document).ready(function() {
 					"Wars may be fought with weapons, but they are won by men. It is the spirit of the men who follow and of the man who leads that gains the victory.",
 					"Courage is fear holding on a minute longer.",
 					"May God have mercy upon my enemies, because I won’t."];
+					
+	$("#quoteButton").on("click", function(){
+		
 		function getRandom(min, max) {
    			return min + Math.floor(Math.random() * (max - min + 1))};
     	var quoteNumber = getRandom(0,quotes.length-1);
