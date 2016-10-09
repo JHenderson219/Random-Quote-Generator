@@ -24,6 +24,6 @@ $(document).ready(function() {
 		//$(".quoteTarget").html("<h3 class = 'animated zoomIn'>Here is a quote</h3>");	
 	});
 	$("#tweetButton").on("click", function(){
-		
+		$(".tweetButton").attr("href", "https://twitter.com/intent/tweet?text="+quotes[quoteNumber]);
 	});
 });
