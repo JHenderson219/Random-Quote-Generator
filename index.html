@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+ 	<title>Random Quote Generator by Jordan Henderson</title>
+ 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Dosis:300" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <script src="scripts/quoteScript.js"> </script>
+    
+    
+    
+  </head>
+  <body>
+  	<div class = "container-fluid">
+  		<div class = "row">
+  			<div class = "col-md-12">
+  				<h1 class ="text-center animated fadeIn"> Random Quote Generator </h1>
+  			</div>
+  		</div>
+  		<div class = "powder-blue">
+  		<div class ="row">
+  			<div class = "col-md-12">
+  				<h2 class= "text-center animated fadeInDown"> Quote </h2>
+  			</div>
+  		</div>
+  		<div class = "row">
+  			<div class = "col-md-12">
+  				<div id="quoteTarget" class ="quoteTarget text-center"> <h3 class = "animated zoomIn"> Click below for a quote! </h3>
+  				</div>
+  			</div>
+  		</div>
+  		<div class = "row">
+  			<div class = "col-md-12">
+  				<h2 class = "text-center animated fadeInUp"> Author </h2>
+  			</div>
+  		</div>
+  		<div class = "row">
+  			<div class = "col-md-12">
+  				<div id="authorTarget" class="authorTarget text-center"> <h3 class = "animated zoomIn"> &mdash; General George S. Patton </h3>
+  				</div>
+  			</div>
+  		</div>
+  		<div class = "row">
+  			<div class ="col-md-4">
+  			</div>
+  			<div class = "col-md-4">
+  				<button type= "button" id="quoteButton" class = "btn btn-primary btn-lg center-block animated zoomIn quoteButton"> New Quote </button>
+  			</div>
+      </div>
+      <div class= "row">
+			<div class = "col-md-4">
+      </div>
+      <div class = "col-md-4">
+        <a class="twitter-share-button btn btn-info btn-lg center-block" target = "_blank" href="https://twitter.com/intent/tweet?text=quotes[quoteNumber]"
+        data-size="large">
+        Tweet</a>
+				<!--<a href="https://twitter.com/share" type="button" target ="_blank" class="btn btn-info btn-lg twitter-share-button center-block animated zoomin" data-show-count="false">Tweet this Quote!</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+  			</div>
+  		</div>
+  		</div>
+  	</div>
+  </body>
