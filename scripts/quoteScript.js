@@ -9,12 +9,11 @@ $(document).ready(function() {
 					"Wars may be fought with weapons, but they are won by men. It is the spirit of the men who follow and of the man who leads that gains the victory.",
 					"Courage is fear holding on a minute longer.",
 					"May God have mercy upon my enemies, because I won’t."];
-					
+	var quoteNumber = 0				
 	$("#quoteButton").on("click", function(){
-		
 		function getRandom(min, max) {
    			return min + Math.floor(Math.random() * (max - min + 1))};
-    	var quoteNumber = getRandom(0,quotes.length-1);
+    		quoteNumber = getRandom(0,quotes.length-1);
     	console.log(quoteNumber);
 		 
 		/*$.jQuery.ajax("http://forismatic.com/en/api/", function(quoteJson){
@@ -24,6 +23,6 @@ $(document).ready(function() {
 		//$(".quoteTarget").html("<h3 class = 'animated zoomIn'>Here is a quote</h3>");	
 	});
 	$("#tweetButton").on("click", function(){
-		$(".tweetButton").attr("href", "https://twitter.com/intent/tweet?text="+quotes[quoteNumber]);
+		$("#tweetButton").attr("href","https://twitter.com/intent/tweet/?text="+quotes[quoteNumber]+" -General George S. Patton");
 	});
 });
