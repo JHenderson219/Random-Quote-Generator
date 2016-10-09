@@ -23,5 +23,7 @@ $(document).ready(function() {
 		$(".quoteTarget").html("<h3 class = 'animated zoomIn'>"+'"'+ quotes[quoteNumber]+'"'+"</h3>");
 		//$(".quoteTarget").html("<h3 class = 'animated zoomIn'>Here is a quote</h3>");	
 	});
-
+	$("#tweetButton").on("click", function(){
+		
+	});
 });
