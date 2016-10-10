@@ -39,4 +39,5 @@ $(document).ready(function() {
 	});
 	$("#tweetButton").on("tap", function(){
 		$("#tweetButton").attr("href","https://twitter.com/intent/tweet/?text="+quotes[quoteNumber]+" -General George S. Patton");
+	});
 });
