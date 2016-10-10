@@ -22,7 +22,21 @@ $(document).ready(function() {
 		$(".quoteTarget").html("<h3 class = 'animated zoomIn'>"+'"'+ quotes[quoteNumber]+'"'+"</h3>");
 		//$(".quoteTarget").html("<h3 class = 'animated zoomIn'>Here is a quote</h3>");	
 	});
+	$("#quoteButton").on("tap", function(){
+		function getRandom(min, max) {
+   			return min + Math.floor(Math.random() * (max - min + 1))};
+    		quoteNumber = getRandom(0,quotes.length-1);
+    	console.log(quoteNumber);
+		 
+		/*$.jQuery.ajax("http://forismatic.com/en/api/", function(quoteJson){
+			$(".quoteTarget").html(JSON.stringify(quoteJson));
+		});*/ 
+		$(".quoteTarget").html("<h3 class = 'animated zoomIn'>"+'"'+ quotes[quoteNumber]+'"'+"</h3>");
+		//$(".quoteTarget").html("<h3 class = 'animated zoomIn'>Here is a quote</h3>");	
+	});
 	$("#tweetButton").on("click", function(){
 		$("#tweetButton").attr("href","https://twitter.com/intent/tweet/?text="+quotes[quoteNumber]+" -General George S. Patton");
 	});
+	$("#tweetButton").on("tap", function(){
+		$("#tweetButton").attr("href","https://twitter.com/intent/tweet/?text="+quotes[quoteNumber]+" -General George S. Patton");
 });
